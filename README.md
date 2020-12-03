@@ -8,7 +8,7 @@
 - [x] User types !mod-me : Bot assigns 'moderator' role to the sender.
 - [ ] User types ?covid-update : Bot gives the latest covid updates.
 - [ ] User types #joke : Tells a joke to entertain the users.
-- [x] User types "This works great": Bot reacts with an heart emoji if the user sends this message to the channel.
+- [x] User types "This works great": Bot reacts with an sparkling heart emoji.
 - [x] User types "Ping": Bot replies Pong.
 - [x] User deletes any of thier message: Bot replies "Stop deleting messages".
 
