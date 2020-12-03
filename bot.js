@@ -9,18 +9,18 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
 });
 
-client.on("message", (msg) => {
-  if (msg.content === "Ping") {
-    msg.reply("Pong");
-    // msg.channel.send("Pong");
-  }
-});
+client.on("message", (msg) => {});
 
 client.on("messageDelete", (msg) => {
   msg.reply("Stop deleting messages");
 });
 
 client.on("message", (msg) => {
+  if (msg.content === "Ping") {
+    // msg.reply("Pong");
+    msg.channel.send("Pong");
+  }
+
   if (msg.content === "!mod-me") {
     msg.member.roles.add("784029444561567744");
     msg.reply("You have been assigned as a 'moderator' role");
